@@ -28,12 +28,10 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-# 加這段就能讓 Render 網頁首頁正常訪問
 @app.route("/", methods=["GET"])
 def home():
     return "✅ Webhook server is live!", 200
 
-# TradingView 的 webhook 入口
 @app.route("/webhook", methods=["POST"])
 def webhook():
     data = request.json
