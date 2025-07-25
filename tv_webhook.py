@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # 你自己的 Telegram bot token 和 chat id
 BOT_TOKEN = '7929780148:AAEKw3t9XUQdc-LkxK2J9tCWwbxqMtahjoU'
-CHAT_ID = '-1002600069321'
+CHAT_ID = '-1002558731125'
 
 # 首頁測試，打開網址會看到這個文字
 @app.route("/", methods=["GET"])
